@@ -21,14 +21,17 @@ export default function AuthShell({
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/20" />
         <div className="absolute inset-0 flex flex-col justify-between p-12">
-          <Link href="/" className="flex items-center">
+          <Link
+            href="/"
+            className="inline-flex items-center rounded-2xl bg-cream px-5 py-3 shadow-soft"
+          >
             <Image
               src="/logo.png"
               alt="mkfoodmonk"
-              width={195}
-              height={130}
+              width={720}
+              height={221}
               priority
-              className="h-14 w-auto"
+              className="h-11 w-auto"
             />
           </Link>
           <div>
@@ -50,8 +53,8 @@ export default function AuthShell({
             <Image
               src="/logo.png"
               alt="mkfoodmonk"
-              width={180}
-              height={120}
+              width={720}
+              height={221}
               className="h-12 w-auto"
             />
           </Link>

@@ -7,13 +7,15 @@ export default function Footer() {
     <footer className="border-t border-ink/5 bg-ink text-cream">
       <div className="container-px grid gap-12 py-16 md:grid-cols-4">
         <div className="md:col-span-2">
-          <Image
-            src="/logo.png"
-            alt="mkfoodmonk"
-            width={210}
-            height={140}
-            className="h-14 w-auto"
-          />
+          <span className="inline-flex rounded-2xl bg-cream px-5 py-3 shadow-soft">
+            <Image
+              src="/logo.png"
+              alt="mkfoodmonk"
+              width={720}
+              height={221}
+              className="h-11 w-auto"
+            />
+          </span>
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-cream/60">
             Premium food delivery, curated artisan stores, and a world-class
             chef video library — all in one place.

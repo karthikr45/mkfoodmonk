@@ -22,10 +22,10 @@ export default function Navbar() {
           <Image
             src="/logo.png"
             alt="mkfoodmonk"
-            width={180}
-            height={120}
+            width={720}
+            height={221}
             priority
-            className="h-12 w-auto"
+            className="h-11 w-auto"
           />
         </Link>
 
