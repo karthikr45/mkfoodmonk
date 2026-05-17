@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
-import { Menu, X, Soup } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const links = [
   { href: "/#stores", label: "Stores" },
@@ -17,13 +18,15 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-ink/5 bg-cream/80 backdrop-blur-xl">
       <nav className="container-px flex h-20 items-center justify-between">
-        <Link href="/" className="flex items-center gap-2.5">
-          <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-saffron text-white shadow-soft">
-            <Soup size={20} strokeWidth={2.4} />
-          </span>
-          <span className="font-display text-2xl font-700 tracking-tight text-ink">
-            mk<span className="text-saffron">food</span>monk
-          </span>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/logo.png"
+            alt="mkfoodmonk"
+            width={180}
+            height={120}
+            priority
+            className="h-12 w-auto"
+          />
         </Link>
 
         <div className="hidden items-center gap-9 lg:flex">

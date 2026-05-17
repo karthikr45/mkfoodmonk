@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Soup, Quote } from "lucide-react";
+import { Quote } from "lucide-react";
 
 export default function AuthShell({
   children,
@@ -21,13 +21,15 @@ export default function AuthShell({
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-ink/20" />
         <div className="absolute inset-0 flex flex-col justify-between p-12">
-          <Link href="/" className="flex items-center gap-2.5">
-            <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-saffron text-white">
-              <Soup size={20} strokeWidth={2.4} />
-            </span>
-            <span className="font-display text-2xl font-700 text-cream">
-              mk<span className="text-saffron-light">food</span>monk
-            </span>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/logo.png"
+              alt="mkfoodmonk"
+              width={195}
+              height={130}
+              priority
+              className="h-14 w-auto"
+            />
           </Link>
           <div>
             <Quote size={36} className="text-saffron-light" />
@@ -44,16 +46,14 @@ export default function AuthShell({
       {/* Form side */}
       <div className="flex items-center justify-center bg-cream px-6 py-12">
         <div className="w-full max-w-md">
-          <Link
-            href="/"
-            className="mb-10 flex items-center gap-2.5 lg:hidden"
-          >
-            <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-saffron text-white">
-              <Soup size={20} strokeWidth={2.4} />
-            </span>
-            <span className="font-display text-2xl font-700 text-ink">
-              mk<span className="text-saffron">food</span>monk
-            </span>
+          <Link href="/" className="mb-10 flex items-center lg:hidden">
+            <Image
+              src="/logo.png"
+              alt="mkfoodmonk"
+              width={180}
+              height={120}
+              className="h-12 w-auto"
+            />
           </Link>
           {children}
         </div>

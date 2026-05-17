@@ -1,19 +1,19 @@
 import Link from "next/link";
-import { Soup, Instagram, Twitter, Youtube } from "lucide-react";
+import Image from "next/image";
+import { Instagram, Twitter, Youtube } from "lucide-react";
 
 export default function Footer() {
   return (
     <footer className="border-t border-ink/5 bg-ink text-cream">
       <div className="container-px grid gap-12 py-16 md:grid-cols-4">
         <div className="md:col-span-2">
-          <div className="flex items-center gap-2.5">
-            <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-saffron text-white">
-              <Soup size={20} strokeWidth={2.4} />
-            </span>
-            <span className="font-display text-2xl font-700">
-              mk<span className="text-saffron-light">food</span>monk
-            </span>
-          </div>
+          <Image
+            src="/logo.png"
+            alt="mkfoodmonk"
+            width={210}
+            height={140}
+            className="h-14 w-auto"
+          />
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-cream/60">
             Premium food delivery, curated artisan stores, and a world-class
             chef video library — all in one place.
