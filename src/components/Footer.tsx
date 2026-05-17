@@ -77,6 +77,17 @@ export default function Footer() {
         <div className="container-px flex flex-col items-center justify-between gap-3 py-6 text-xs text-cream/40 sm:flex-row">
           <p>© {new Date().getFullYear()} mkfoodmonk. Crafted with taste.</p>
           <p>Premium food, delivered with soul.</p>
+          <p>
+            Powered by{" "}
+            <a
+              href="https://mktechmonk.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-saffron-light hover:text-saffron"
+            >
+              mktechmonk.in
+            </a>
+          </p>
         </div>
       </div>
     </footer>
